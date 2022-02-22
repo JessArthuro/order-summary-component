@@ -69,7 +69,7 @@ main .card::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 12.5rem;
+  height: 13rem;
   background-image: url(../images/illustration-hero.svg);
   background-position: center;
   background-size: cover;
@@ -78,7 +78,7 @@ main .card::before {
 main .card .content {
   padding: 2.5rem;
   text-align: center;
-  margin-top: 11rem;
+  margin-top: 11.8rem;
 }
 
 main .card .content .title {
@@ -91,7 +91,7 @@ main .card .content .title {
 main .card .content .description {
   color: var(--desatured-blue);
   padding-bottom: 1.5rem;
-  font-size: .85rem;
+  font-size: 1rem;
   line-height: 1.3rem;
 }
 
@@ -106,7 +106,7 @@ main .card .content .info {
       -ms-flex-align: center;
           align-items: center;
   background-color: rgba(224, 232, 255, 0.35);
-  padding: 1rem 0;
+  padding: 2rem 0;
   border-radius: .5rem;
 }
 
