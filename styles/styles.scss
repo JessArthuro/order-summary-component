@@ -47,7 +47,7 @@ main {
     min-height: 100vh;
 
     .card {
-        max-width: 25.5rem;
+        max-width: 24.5rem;
         height: fit-content;
         background: var(--very-pale-blue);
         border-radius: 1rem;
@@ -57,16 +57,16 @@ main {
         &::before {
             content: "";
             position: absolute;
-            width: 100%; height: 12.5rem;
+            width: 100%; height: 11rem;
             background-image: url(../images/illustration-hero.svg);
             background-position: center;
             background-size: cover;
         }
 
         .content {
-            padding: 2.5rem;
+            padding: 2.2rem 2.2rem 1.2rem;
             text-align: center;
-            margin-top: 11.8rem;
+            margin-top: 9.2rem;
 
             .title {
                 color: var(--dark-blue);
@@ -77,9 +77,9 @@ main {
 
             .description {
                 color: var(--desatured-blue);
-                padding-bottom: 1.5rem;
+                padding-bottom: .95rem;
                 font-size: 1rem;
-                line-height: 1.75rem;
+                line-height: 1.65rem;
             }
 
             .info {
@@ -87,7 +87,7 @@ main {
                 justify-content: space-between;
                 align-items: center;
                 background-color: hsla(225, 100%, 94%, 0.35);
-                padding: 2rem 0;
+                padding: .95rem 0;
                 border-radius: .5rem;
     
                 .options {
@@ -126,7 +126,7 @@ main {
             }
 
             .buttons {
-                margin-top: 1.8rem;
+                margin-top: 1.6rem;
                 a {
                     display: block;
                 }
@@ -135,7 +135,7 @@ main {
                     background: var(--bright-blue);
                     color: var(--very-pale-blue);
                     padding: .75rem 0;
-                    margin-bottom: 1.4rem;
+                    margin-bottom: 1.2rem;
                     border-radius: .5rem;
                     font-size: .8rem;
                     font-weight: 700;
@@ -149,6 +149,7 @@ main {
                     color: var(--desatured-blue);
                     font-size: .8rem;
                     font-weight: 900;
+                    // padding-bottom: .5rem;
 
                     &:hover {
                         color: var(--dark-blue);
