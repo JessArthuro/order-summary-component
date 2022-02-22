@@ -1,0 +1,221 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(228, 100%, 98%);
+  --desatured-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+  font-size: 1.125rem;
+  font-family: 'Red Hat Display', sans-serif;
+  min-height: 100vh;
+  background-color: var(--pale-blue);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-position: 50% -45%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+main .card {
+  max-width: 22.5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: var(--very-pale-blue);
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+main .card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 11rem;
+  background-image: url(../images/illustration-hero.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+main .card .content {
+  padding: 2.5rem;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+main .card .content .title {
+  color: var(--dark-blue);
+  padding: 1rem 0;
+  font-size: 1.45rem;
+  font-weight: 900;
+}
+
+main .card .content .description {
+  color: var(--desatured-blue);
+  padding-bottom: 1.5rem;
+  font-size: .85rem;
+  line-height: 1.3rem;
+}
+
+main .card .content .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(224, 232, 255, 0.35);
+  padding: 1rem 0;
+  border-radius: .5rem;
+}
+
+main .card .content .info .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1.2rem;
+  gap: .8rem;
+}
+
+main .card .content .info .options .details .plan {
+  font-size: .85rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+  padding-bottom: .2rem;
+}
+
+main .card .content .info .options .details .price {
+  color: var(--desatured-blue);
+  font-size: .85rem;
+}
+
+main .card .content .info .btn-change {
+  font-size: .70rem;
+  padding-right: 1.2rem;
+  text-decoration: underline;
+  color: var(--bright-blue);
+  font-weight: 900;
+}
+
+main .card .content .info .btn-change:hover {
+  color: rgba(56, 41, 224, 0.75);
+  text-decoration: none;
+}
+
+main .card .content .buttons {
+  margin-top: 1.8rem;
+}
+
+main .card .content .buttons a {
+  display: block;
+}
+
+main .card .content .buttons .btn-payment {
+  background: var(--bright-blue);
+  color: var(--very-pale-blue);
+  padding: .75rem 0;
+  margin-bottom: 1.4rem;
+  border-radius: .5rem;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+main .card .content .buttons .btn-payment:hover {
+  background: rgba(56, 41, 224, 0.75);
+}
+
+main .card .content .buttons .btn-cancel {
+  color: var(--desatured-blue);
+  font-size: .8rem;
+  font-weight: 900;
+}
+
+main .card .content .buttons .btn-cancel:hover {
+  color: var(--dark-blue);
+}
+
+footer .attribution {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: .80rem;
+  text-align: center;
+  color: var(--desatured-blue);
+}
+
+footer .attribution a {
+  color: var(--dark-blue);
+}
+
+footer .attribution a:hover {
+  color: var(--bright-blue);
+}
+
+@media (max-width: 39rem) {
+  footer .attribution {
+    display: none;
+  }
+}
+
+@media (max-width: 30rem) {
+  main .card {
+    max-width: 20.5rem;
+  }
+  main .card .content {
+    padding: 1.35rem;
+  }
+  main .card .content .buttons .btn-payment {
+    padding: .90rem 0;
+    font-size: .9rem;
+  }
+  main .card .content .buttons .btn-cancel {
+    padding-bottom: .5rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
